@@ -5,6 +5,9 @@ export default function Footer() {
                 <p>
                     Made with 💛 by <a href="https://instagram.com/harysuryanto_" target="_blank">Hary Suryanto</a>
                 </p>
+                <p>
+                    Contribut to <a href="https://github.com/harysuryanto/ngemim" target="_blank">this project</a>
+                </p>
             </div>
         </footer>
     );

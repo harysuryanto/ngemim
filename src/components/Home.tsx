@@ -1,5 +1,3 @@
-import React, {useReducer} from 'react';
-
 import 'bulma/css/bulma.min.css';
 import useFetch from './useFetch';
 import MemeList from './MemeList';
@@ -17,7 +15,7 @@ export default function Home() {
                             Welcome to <strong>Ngemim</strong>!
                         </h1>
                         <p className="subtitle">
-                            Memes power up your mood.
+                            Memes boost mood 🚀
                         </p>
                     </div>
                 </div>
@@ -46,3 +44,7 @@ export default function Home() {
         </>
     );
 }
+
+/* 
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+*/
