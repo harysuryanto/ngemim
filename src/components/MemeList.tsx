@@ -17,7 +17,7 @@ export default function MemeList(props: any) {
                         {/* <div className="title">name</div> */}
                         <div className="content">
                             {/* Lorem ipsum dolor sit amet, consectetur. */}
-                            <p>Tags: {data.tags}</p>
+                            <p>#{data.tags.join(' #')}</p>
                         </div>
                     </div>
                     {/* <div className="card-footer">
