@@ -15,7 +15,7 @@ export default function Home() {
                             Welcome to <strong>Ngemim</strong>!
                         </h1>
                         <p className="subtitle">
-                            Memes boost mood 🚀
+                            Power up your mood 🔥
                         </p>
                     </div>
                 </div>
