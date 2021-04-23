@@ -2,9 +2,12 @@ import 'bulma/css/bulma.min.css';
 import useFetch from './useFetch';
 import MemeList from './MemeList';
 import Footer from './Footer';
+import { useState } from 'react';
 
 export default function Home() {
     const {data: data, isPending, error} = useFetch('https://cataas.com/cat/gif?json=true');
+
+    const [buttonClassName, setButtonClassName] = useState('button is-align-self-center');
 
     return (
         <>
@@ -12,10 +15,10 @@ export default function Home() {
                 <div className="columns is-centered">
                     <div className="column is-full-tablet is-half-desktop">
                         <h1 className="title">
-                            Welcome to <strong>Ngemim</strong>!
+                            Ngemim
                         </h1>
                         <p className="subtitle">
-                            Power up your mood 🔥
+                            powers up your mood 🔥
                         </p>
                     </div>
                 </div>
@@ -30,10 +33,19 @@ export default function Home() {
                         
                         <p className="mt-5 has-text-centered">
                             <button 
-                                className="button is-align-self-center"
-                                onClick={() => window.location.reload()}
+                                className={buttonClassName}
+                                onClick={() => {
+                                    // console.log(buttonClassName.split(' ')[buttonClassName.length-1]);
+                                    setButtonClassName(buttonClassName + ' is-loading');
+                                    window.location.reload();
+                                    /* setButtonClassName(
+                                        buttonClassName.split(' ')
+                                                       .splice(2, 1)
+                                                       .join(' ')) */
+                                    ;
+                                }}
                             >
-                                Show another ...
+                                Show more
                             </button>
                         </p>
                     </div>
