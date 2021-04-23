@@ -1,3 +1,3 @@
 # Ngemim
 
-is a site for boosting your mood 🔥
+A site for boosting your mood 🔥
