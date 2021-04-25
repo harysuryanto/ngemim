@@ -35,7 +35,7 @@ export default function useFetch(url: any) {
         return () => abortCont.abort();
     }, [url]);
 
-    console.log('ISI DATA', data);
+    console.log('Response data:', data);
 
     return { data, isPending, error }
 }
